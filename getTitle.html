@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Ankit Kumar Verma">
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="rgb(0, 0, 0)" />
+        <!-- <link rel="shortcut icon" type="image/png" href="icon.ico"/> -->
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+        <script src="jquery.js"></script>
+    
+    </head>
+    <body>
+
+        <input type="button" value="Test" id="button">
+
+    </body>
+    <script>
+        $(document).ready(function(){
+
+            $('#button').click(function(){
+                $.ajax(
+                    {
+                        type: "GET",
+                        url: "https://skymovieshd.link/",
+                        success: function( data )
+                        {
+                            console.log(data);   
+                        }
+                    }
+                );
+            });
+        });
+    </script>
+</html>
